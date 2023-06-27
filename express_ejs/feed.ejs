@@ -1,0 +1,15 @@
+<head>
+    <%- include("head.ejs")%>
+    <%- include("nav.ejs")%>
+</head>
+<body>
+    <% if(data.length>0){ %>
+       <% data.forEach(p=>{ %>
+          <a href="/feed/<%= p._id %>">
+             <%= p.post %>
+          </a>
+           <!-- <%= p.posted_by %> -->
+       </br>
+       <% }) %>
+    <% } %>
+</body>

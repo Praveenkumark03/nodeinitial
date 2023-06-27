@@ -1,0 +1,15 @@
+<%- include("head.ejs")%>
+<%- include("nav.ejs")%>
+<h1>CREATE NEW POST</h1>
+
+<body>
+<form action="/feed" method="POST">
+   <label id="post"> Post </label>
+   <input type="text" id="post" name="post" required>
+   <br>
+   <label id="posted_by"> Posted By </label>
+   <input type="text" id="posted_by" name="posted_by" required>
+   <br>
+   <button>Submit</button>
+</form>
+</body>
